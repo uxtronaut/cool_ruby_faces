@@ -1,11 +1,11 @@
 # CoolRubyFaces
 
-Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool_ascii_faces)
+Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
 
 ## Installation
 
 ```
-git clone https://github.com/uxtronaut/cool-ruby-faces
+git clone https://github.com/uxtronaut/cool_ruby_faces
 cd cool-ruby-faces
 gem install ./cool-ruby-faces-0.0.2.gem
 ```
