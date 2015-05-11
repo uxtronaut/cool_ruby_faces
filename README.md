@@ -1,6 +1,6 @@
 # CoolRubyFaces
 
-Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
+Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool_ascii_faces)
 
 ## Installation
 
