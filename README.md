@@ -12,7 +12,16 @@ gem install ./cool-ruby-faces-0.0.1.gem
 
 ## Usage
 
+For a random cool face:
+
 ```
 cool-face
 > ಠ_ರೃ
+```
+
+To see all the cool faces:
+
+```
+cool-face all
+> <tons of cool faces>
 ```
