@@ -4,18 +4,15 @@ Ruby version of (Cool Ascii Faces)[https://github.com/maxogden/cool-ascii-faces]
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'cool_ruby_faces'
+```
+git clone https://github.com/uxtronaut/cool-ruby-faces
+cd cool-ruby-faces
+gem install ./cool-ruby-faces-0.0.1.gem
 ```
 
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install cool_ascii_faces
-
 ## Usage
+
+```
+cool-face
+> ಠ_ರೃ
+```
