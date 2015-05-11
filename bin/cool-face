@@ -1,8 +1,8 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require './lib/cool_ruby_faces/version'
-require './lib/cool_ruby_faces'
+require 'cool_ruby_faces/version'
+require 'cool_ruby_faces'
 require 'commander/import'
 
 program :name, 'CoolRubyFaces'
