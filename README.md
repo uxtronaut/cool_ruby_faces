@@ -6,7 +6,7 @@ Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
 
 ```
 git clone https://github.com/uxtronaut/cool_ruby_faces
-cd cool-ruby-faces
+cd cool_ruby_faces
 gem install ./cool-ruby-faces-0.0.2.gem
 ```
 
