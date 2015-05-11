@@ -14,9 +14,9 @@ Gem::Specification.new do |spec|
   spec.homepage      = "http://mondorobot.com"
   spec.license       = "MIT"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "exe"
-  spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
+  spec.files         = ['lib/cool_ruby_faces.rb', 'lib/cool_ruby_faces/version.rb']
+
+  spec.executables   = "cool-face"
   spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.8"
