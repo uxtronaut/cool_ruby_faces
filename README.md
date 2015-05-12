@@ -1,4 +1,4 @@
-# CoolRubyFaces
+# CoolRubyFaces ✌(-‿-)✌
 
 Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
 
@@ -7,15 +7,22 @@ Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
 ```
 git clone https://github.com/uxtronaut/cool_ruby_faces
 cd cool_ruby_faces
-gem install ./cool_ruby_faces-0.0.3.gem
+gem install ./cool_ruby_faces-0.0.4.gem
 ```
 
 ## Usage
 
-For a random cool face:
+To copy a random cool face to your clipboard:
 
 ```
 cool-face
+> Copied ~(˘▾˘~) to clipboard
+```
+
+For a random cool face:
+
+```
+cool-face random
 > ಠ_ರೃ
 ```
 

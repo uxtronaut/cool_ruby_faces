@@ -1,4 +1,3 @@
-# coding: utf-8
 lib = File.expand_path('../lib', __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'cool_ruby_faces/version'
@@ -18,7 +17,6 @@ Gem::Specification.new do |spec|
 
   spec.executables   = 'cool-face'
   spec.require_paths = ['lib']
-
 
   spec.add_dependency 'commander'
 
