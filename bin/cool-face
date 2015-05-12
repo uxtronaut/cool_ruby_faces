@@ -1,28 +1,27 @@
 #!/usr/bin/env ruby
 
-require 'rubygems'
-require 'cool_ruby_faces/version'
-require 'cool_ruby_faces'
+require_relative '../lib/cool_ruby_faces/version'
+require_relative '../lib/cool_ruby_faces'
 require 'commander/import'
 
 program :name, 'CoolRubyFaces'
-program :version, '0.0.1'
+program :version, CoolRubyFaces::VERSION
 program :description, 'Cool ASCII Faces in your terminal'
 
 default_command :random
-
-command :all do |c|
-  c.syntax = 'cool-face --all'
-  c.description = 'Output all the Cool ASCII Faces'
-  c.action do |args, options|
-    CoolRubyFaces.all
-  end
-end
 
 command :random do |c|
   c.syntax = 'cool-face'
   c.description = 'Output a random Cool ASCII Face'
   c.action do |args, options|
     CoolRubyFaces.random
+  end
+end
+
+command :all do |c|
+  c.syntax = 'cool-face --all'
+  c.description = 'Output all the Cool ASCII Faces'
+  c.action do |args, options|
+    CoolRubyFaces.all
   end
 end
