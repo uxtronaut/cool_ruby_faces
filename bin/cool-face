@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 # encoding: utf-8
 
+require 'awesome_print'
 require 'commander/import'
 require_relative '../lib/cool_ruby_faces'
 
@@ -9,6 +10,18 @@ program :version, CoolRubyFaces::VERSION
 program :description, 'Cool ASCII (Unicode) Faces in your terminal'
 
 default_command :copy
+
+command :copy do |c|
+  c.syntax = 'cool-face copy'
+  c.description = "Copy random Cool ASCII (Unicode) Face to your clipboard"
+  c.action do |args, options|
+    face = CoolRubyFaces.random
+
+    %x[printf "#{face}" | __CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbcopy]
+
+    puts "Copied #{face} to clipboard"
+  end
+end
 
 command :random do |c|
   c.syntax = 'cool-face random'
@@ -23,17 +36,5 @@ command :all do |c|
   c.description = 'Output all the Cool ASCII (Unicode) Faces'
   c.action do |args, options|
     puts CoolRubyFaces.all
-  end
-end
-
-command :copy do |c|
-  c.syntax = 'cool-face copy'
-  c.description = "Copy random Cool ASCII (Unicode) Face to your clipboard"
-  c.action do |args, options|
-    face = CoolRubyFaces.random
-
-    %x[echo "#{face}" | __CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbcopy]
-
-    puts "Copied #{face} to clipboard"
   end
 end
