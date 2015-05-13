@@ -1,5 +1,4 @@
 require 'yaml'
-require_relative './cool_ruby_faces/version'
 
 module CoolRubyFaces
 

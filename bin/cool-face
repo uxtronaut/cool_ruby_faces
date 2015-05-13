@@ -4,6 +4,7 @@
 require 'awesome_print'
 require 'commander/import'
 require_relative '../lib/cool_ruby_faces'
+require_relative '../lib/cool_ruby_faces/version'
 
 program :name, 'Cool Ruby Faces'
 program :version, CoolRubyFaces::VERSION
