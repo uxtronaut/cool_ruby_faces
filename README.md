@@ -5,9 +5,15 @@ Ruby version of [Cool Ascii Faces](https://github.com/maxogden/cool-ascii-faces)
 ## Installation
 
 ```
+gem install cool_ruby_faces
+```
+
+or install from source:
+
+```
 git clone https://github.com/uxtronaut/cool_ruby_faces
 cd cool_ruby_faces
-gem install ./cool_ruby_faces-0.0.9.gem
+gem install ./cool_ruby_faces-0.0.10.gem
 ```
 
 ## Uninstall (obviously to install a newer version)
