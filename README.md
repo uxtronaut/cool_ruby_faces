@@ -13,7 +13,7 @@ or install from source:
 ```
 git clone https://github.com/uxtronaut/cool_ruby_faces
 cd cool_ruby_faces
-gem install ./cool_ruby_faces-0.0.10.gem
+gem install ./cool_ruby_faces-0.0.11.gem
 ```
 
 ## Uninstall (obviously to install a newer version)
