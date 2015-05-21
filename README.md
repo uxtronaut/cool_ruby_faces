@@ -29,6 +29,13 @@ y
 
 ## Usage
 
+To copy a named cool face to your clipboard:
+
+```
+> cool-face bro
+> Copied (☞ﾟ∀ﾟ)☞ to clipboard
+```
+
 To copy a random cool face to your clipboard:
 
 ```
