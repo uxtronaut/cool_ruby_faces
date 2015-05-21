@@ -13,9 +13,9 @@ default_command :copy
 
 command :copy do |c|
   c.syntax = 'cool-face copy'
-  c.description = "Copy random Cool ASCII (Unicode) Face to your clipboard"
+  c.description = "Copy a specific, or random if left blank, Cool ASCII (Unicode) Face to your clipboard"
   c.action do |args, options|
-    face = CoolRubyFaces.random
+    face = args.empty? ?  CoolRubyFaces.random : CoolRubyFaces.specific(args.shift)
 
     %x[printf "#{face}" | __CF_USER_TEXT_ENCODING=$UID:0x8000100:0x8000100 pbcopy]
 
